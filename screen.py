@@ -8,8 +8,8 @@ VIRTUAL_COM_PORT = 'COM13'          # Python side. org gets COM12
 BAUD_RATE = 115200                  # nominal - com0com ignores baud rate
 FPS = 60
 
-GRID_W, GRID_H = 60, 32
-NUM_LEDS = GRID_W * GRID_H          # 1920 (match in org)
+GRID_W, GRID_H = 64, 32
+NUM_LEDS = GRID_W * GRID_H          # 2048 (match in org)
 PACKET_SIZE = 1 + 3 * NUM_LEDS + 2  # 0xAA + RGB per LED + 2 checksum
 
 # framebuffer
